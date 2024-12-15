@@ -446,129 +446,131 @@
         </div>
         <div id="form" style="margin: 0 auto; text-align: center">
             <h1>РЕЄСТРУЙСЯ НА<br> МАЙСТЕР-КЛАС</h1>
-            <div class="payment-form">
-                <h2>Вартість</h2>
-                <div class="price">375 <span>UAH</span></div>
+            <button type="button" onclick="pay();">Оплатить</button>
+<!--            <div class="payment-form">-->
+<!--                <h2>Вартість</h2>-->
+<!--                <div class="price">375 <span>UAH</span></div>-->
 
-                <form id="wayforpayForm">
-                    <label for="name">ПІБ</label>
-                    <input type="text" id="name" placeholder="Шевченко Ігор Петрович" required>
+<!--                <form id="wayforpayForm">-->
+<!--                    <label for="name">ПІБ</label>-->
+<!--                    <input type="text" id="name" placeholder="Шевченко Ігор Петрович" required>-->
 
-                    <label for="phone">Номер телефону</label>
-                    <input type="tel" id="phone" placeholder="+380" required>
+<!--                    <label for="phone">Номер телефону</label>-->
+<!--                    <input type="tel" id="phone" placeholder="+380" required>-->
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="example@gmail.com" required>
+<!--                    <label for="email">Email</label>-->
+<!--                    <input type="email" id="email" placeholder="example@gmail.com" required>-->
 
-                    <div class="payment-methods">
-                        <button type="button" class="apple-pay-btn">Оплатити з Apple Pay</button>
-                        <button type="button" class="gpay-btn">Оплатити з Google Pay</button>
-                    </div>
+<!--                    <div class="payment-methods">-->
+<!--                        <button type="button" class="apple-pay-btn">Оплатити з Apple Pay</button>-->
+<!--                        <button type="button" class="gpay-btn">Оплатити з Google Pay</button>-->
+<!--                    </div>-->
 
-                    <hr>
+<!--                    <hr>-->
 
-                    <label for="cardNumber">Номер картки</label>
-                    <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+<!--                    <label for="cardNumber">Номер картки</label>-->
+<!--                    <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>-->
 
-                    <div class="card-details">
-                        <div>
-                            <label for="expiry">Термін дії</label>
-                            <input type="text" id="expiry" placeholder="MM/PP" maxlength="5" required>
-                        </div>
-                        <div>
-                            <label for="cvv">CVV2</label>
-                            <input type="text" id="cvv" placeholder="XXX" maxlength="3" required>
-                        </div>
-                    </div>
+<!--                    <div class="card-details">-->
+<!--                        <div>-->
+<!--                            <label for="expiry">Термін дії</label>-->
+<!--                            <input type="text" id="expiry" placeholder="MM/PP" maxlength="5" required>-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <label for="cvv">CVV2</label>-->
+<!--                            <input type="text" id="cvv" placeholder="XXX" maxlength="3" required>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                    <button type="submit" class="pay-btn">Оплатити</button>
-                </form>
-            </div>
-            <style>
-                form{
-                    padding: 20px;
-                }
-                .payment-form {
-                    max-width: 400px;
-                    margin: 50px auto;
-                    padding: 20px;
-                    background: #fff;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                }
+<!--                    <button type="submit" class="pay-btn">Оплатити</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--            <style>-->
+<!--                form{-->
+<!--                    padding: 20px;-->
+<!--                }-->
+<!--                .payment-form {-->
+<!--                    max-width: 400px;-->
+<!--                    margin: 50px auto;-->
+<!--                    padding: 20px;-->
+<!--                    background: #fff;-->
+<!--                    border-radius: 8px;-->
+<!--                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);-->
+<!--                }-->
 
-                h2 {
-                    font-size: 18px;
-                    margin-bottom: 10px;
-                    color: #333;
-                }
+<!--                h2 {-->
+<!--                    font-size: 18px;-->
+<!--                    margin-bottom: 10px;-->
+<!--                    color: #333;-->
+<!--                }-->
 
-                .price {
-                    font-size: 24px;
-                    color: #1a73e8;
-                    margin-bottom: 20px;
-                }
+<!--                .price {-->
+<!--                    font-size: 24px;-->
+<!--                    color: #1a73e8;-->
+<!--                    margin-bottom: 20px;-->
+<!--                }-->
 
-                label {
-                    display: block;
-                    margin-top: 10px;
-                    font-weight: bold;
-                    color: #555;
-                }
+<!--                label {-->
+<!--                    display: block;-->
+<!--                    margin-top: 10px;-->
+<!--                    font-weight: bold;-->
+<!--                    color: #555;-->
+<!--                }-->
 
-                input {
-                    width: 100%;
-                    padding: 10px;
-                    margin-top: 5px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                }
+<!--                input {-->
+<!--                    width: 100%;-->
+<!--                    padding: 10px;-->
+<!--                    margin-top: 5px;-->
+<!--                    border: 1px solid #ccc;-->
+<!--                    border-radius: 5px;-->
+<!--                }-->
 
-                .payment-methods {
-                    margin: 15px 0;
-                }
+<!--                .payment-methods {-->
+<!--                    margin: 15px 0;-->
+<!--                }-->
 
-                .apple-pay-btn, .gpay-btn {
-                    width: 100%;
-                    padding: 10px;
-                    margin: 5px 0;
-                    background: #000;
-                    color: #fff;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    font-size: 16px;
-                }
+<!--                .apple-pay-btn, .gpay-btn {-->
+<!--                    width: 100%;-->
+<!--                    padding: 10px;-->
+<!--                    margin: 5px 0;-->
+<!--                    background: #000;-->
+<!--                    color: #fff;-->
+<!--                    border: none;-->
+<!--                    border-radius: 5px;-->
+<!--                    cursor: pointer;-->
+<!--                    font-size: 16px;-->
+<!--                }-->
 
-                .apple-pay-btn {
-                    background: #000;
-                }
+<!--                .apple-pay-btn {-->
+<!--                    background: #000;-->
+<!--                }-->
 
-                .gpay-btn {
-                    background: #3c4043;
-                }
+<!--                .gpay-btn {-->
+<!--                    background: #3c4043;-->
+<!--                }-->
 
-                .card-details {
-                    display: flex;
-                    gap: 10px;
-                }
+<!--                .card-details {-->
+<!--                    display: flex;-->
+<!--                    gap: 10px;-->
+<!--                }-->
 
-                .pay-btn {
-                    width: 100%;
-                    padding: 12px;
-                    margin-top: 15px;
-                    background-color: #1a73e8;
-                    color: #fff;
-                    border: none;
-                    border-radius: 5px;
-                    font-size: 16px;
-                    cursor: pointer;
-                }
+<!--                .pay-btn {-->
+<!--                    width: 100%;-->
+<!--                    padding: 12px;-->
+<!--                    margin-top: 15px;-->
+<!--                    background-color: #1a73e8;-->
+<!--                    color: #fff;-->
+<!--                    border: none;-->
+<!--                    border-radius: 5px;-->
+<!--                    font-size: 16px;-->
+<!--                    cursor: pointer;-->
+<!--                }-->
 
-                .pay-btn:hover {
-                    background-color: #0f5bc1;
-                }
-            </style>
+<!--                .pay-btn:hover {-->
+<!--                    background-color: #0f5bc1;-->
+<!--                }-->
+<!--            </style>-->
+
         </div>
 
 
@@ -678,58 +680,93 @@
     </div>
 
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script> <!-- Підключення MD5 бібліотеки -->
-<script>
-document.getElementById('wayforpayForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+<script id="widget-wfp-script" language="javascript" type="text/javascript" src="https://secure.wayforpay.com/server/pay-widget.js"></script>
 
-    const wayforpay = new Wayforpay();
-
-    const secretKey = "9222c72e1d081aa34ce90569865240d9e3fa1de5"; // ВАШ секретний ключ з WayforPay
-
-    // Збираємо дані для платежу
-    const formData = {
-        merchantAccount: "test_merch_n1", // Тестовий Merchant ID
-        merchantDomainName: "https://smm1smm.netlify.app/", // Ваш домен
-        orderReference: "ORDER_ID_" + new Date().getTime(), // Унікальний ідентифікатор замовлення
-        orderDate: Math.floor(Date.now() / 1000), // Час замовлення
-        amount: 2, // Сума платежу
-        currency: "UAH",
-        productName: "Послуга",
-        productPrice: 2,
-        productCount: 1,
-        clientFirstName: document.getElementById('name').value,
-        clientPhone: document.getElementById('phone').value,
-        clientEmail: document.getElementById('email').value
-    };
-
-    // Генеруємо підпис (signature) для запиту
-    const signatureString = [
-        formData.merchantAccount,
-        formData.merchantDomainName,
-        formData.orderReference,
-        formData.orderDate,
-        formData.amount,
-        formData.currency,
-        formData.productName,
-        formData.productCount,
-        formData.productPrice
-    ].join(';') + ';' + secretKey;
-
-    formData.signature = CryptoJS.MD5(signatureString).toString();
-
-    console.log("Generated Signature:", formData.signature); // Для перевірки у консолі
-
-    // Виконуємо запит через WayforPay
-    wayforpay.run(formData, function (response) {
-        alert("Платіж успішно проведено!");
-        console.log(response);
-    }, function (error) {
-        alert("Платіж не вдалося здійснити!");
-        console.error(error);
-    });
-});
+<script type="text/javascript">
+var wayforpay = new Wayforpay();
+var pay = function () {
+wayforpay.run({
+merchantAccount : "test_merch_n1",
+merchantDomainName : "https://smm1smm.netlify.app/",
+authorizationType : "SimpleSignature",
+merchantSignature : "b95932786cbe243a76b014846b63fe92",
+orderReference : "DH783023",
+orderDate : "1415379863",
+amount : "1547.36",
+currency : "UAH",
+productName : "Процессор Intel Core i5-4670 3.4GHz",
+productPrice : "1000",
+productCount : "1",
+clientFirstName : "Вася",
+clientLastName : "Васечкин",
+clientEmail : "some@mail.com",
+clientPhone: "380631234567",
+language: "UA"
+},
+function (response) {
+// on approved
+},
+function (response) {
+// on declined
+},
+function (response) {
+// on pending or in processing
+}
+);
+}
 </script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script> &lt;!&ndash; Підключення MD5 бібліотеки &ndash;&gt;-->
+<!--<script>-->
+<!--document.getElementById('wayforpayForm').addEventListener('submit', function (e) {-->
+<!--    e.preventDefault();-->
+
+<!--    const wayforpay = new Wayforpay();-->
+
+<!--    const secretKey = "9222c72e1d081aa34ce90569865240d9e3fa1de5"; // ВАШ секретний ключ з WayforPay-->
+
+<!--    // Збираємо дані для платежу-->
+<!--    const formData = {-->
+<!--        merchantAccount: "test_merch_n1", // Тестовий Merchant ID-->
+<!--        merchantDomainName: "https://smm1smm.netlify.app/", // Ваш домен-->
+<!--        orderReference: "ORDER_ID_" + new Date().getTime(), // Унікальний ідентифікатор замовлення-->
+<!--        orderDate: Math.floor(Date.now() / 1000), // Час замовлення-->
+<!--        amount: 2, // Сума платежу-->
+<!--        currency: "UAH",-->
+<!--        productName: "Послуга",-->
+<!--        productPrice: 2,-->
+<!--        productCount: 1,-->
+<!--        clientFirstName: document.getElementById('name').value,-->
+<!--        clientPhone: document.getElementById('phone').value,-->
+<!--        clientEmail: document.getElementById('email').value-->
+<!--    };-->
+
+<!--    // Генеруємо підпис (signature) для запиту-->
+<!--    const signatureString = [-->
+<!--        formData.merchantAccount,-->
+<!--        formData.merchantDomainName,-->
+<!--        formData.orderReference,-->
+<!--        formData.orderDate,-->
+<!--        formData.amount,-->
+<!--        formData.currency,-->
+<!--        formData.productName,-->
+<!--        formData.productCount,-->
+<!--        formData.productPrice-->
+<!--    ].join(';') + ';' + secretKey;-->
+
+<!--    formData.signature = CryptoJS.MD5(signatureString).toString();-->
+
+<!--    console.log("Generated Signature:", formData.signature); // Для перевірки у консолі-->
+
+<!--    // Виконуємо запит через WayforPay-->
+<!--    wayforpay.run(formData, function (response) {-->
+<!--        alert("Платіж успішно проведено!");-->
+<!--        console.log(response);-->
+<!--    }, function (error) {-->
+<!--        alert("Платіж не вдалося здійснити!");-->
+<!--        console.error(error);-->
+<!--    });-->
+<!--});-->
+<!--</script>-->
 
 
 <script>
